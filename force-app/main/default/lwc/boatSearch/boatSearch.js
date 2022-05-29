@@ -11,7 +11,10 @@
     
     // Handles search boat event
     // This custom event comes from the form
-    searchBoats(event) { }
+    searchBoats(event) { 
+      console.log('in boatSerach.js caught event');
+      console.log('event.detail', event.detail.boatTypeId);
+    }
     
     createNewBoat() { }
   }
