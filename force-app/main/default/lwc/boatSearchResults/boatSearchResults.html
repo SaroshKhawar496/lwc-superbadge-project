@@ -1,5 +1,5 @@
 <template>
-    <lightning-tabset ...>
+    <lightning-tabset>
       <lightning-tab label="Gallery">
         <div class="slds-scrollable_y">
           <!-- layout horizontally aligned to the center  -->
@@ -25,6 +25,9 @@
       </lightning-tab>
        <lightning-tab label="Boats Near Me">
         <!-- boatsNearMe component goes here -->
+        <c-boats-near-me
+        boat-type-id={boatTypeId}       
+        ></c-boats-near-me>
       </lightning-tab>
     </lightning-tabset>
   </template>
